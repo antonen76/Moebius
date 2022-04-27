@@ -1,5 +1,5 @@
 % Trasfmormazioni di Moebius
-
+%function moebius()
 t=[0:0.001:2*pi];
 
 z1=6*exp(i*t);
@@ -26,7 +26,7 @@ tw3(j)=(6*i*tz3(j)^2-72*i*tz3(j)+(192+216*i))/(tz3(j)^2-20*tz3(j)+116);
 tw4(j)=(6*i*tz4(j)^2-72*i*tz4(j)+(192+216*i))/(tz4(j)^2-20*tz4(j)+116);
 tw5(j)=(6*i*tz5(j)^2-72*i*tz5(j)+(192+216*i))/(tz5(j)^2-20*tz5(j)+116);
 tw6(j)=(6*i*tz6(j)^2-72*i*tz6(j)+(192+216*i))/(tz6(j)^2-20*tz6(j)+116);
-tw7(j)=(6*i*tz7(j)^2-72*i*tzr(j)+(192+216*i))/(tz7(j)^2-20*tz7(j)+116);
+tw7(j)=(6*i*tz7(j)^2-72*i*tz7(j)+(192+216*i))/(tz7(j)^2-20*tz7(j)+116);
 end;
 
 t2=[-pi/2:0.001:pi/2];
@@ -66,4 +66,3 @@ disp(max(rtw4)/2);
 disp(max(rtw5)/2);
 disp(max(rtw6)/2);
 disp(max(rtw7)/2);
-end;
